@@ -1,0 +1,43 @@
+.header {
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.headerTitle {
+  width: 100%;
+  font-size: 3rem;
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.headerTitle span {
+  font-size: 2.5rem;
+}
+
+.navbar {
+  background-color: var(--color-palet-3);
+  padding: 1px 0;
+}
+
+.navbar ul {
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10%;
+}
+
+.navbar ul li a {
+  font-size: 1.3rem;
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .navbar ul {
+    gap: 0;
+    justify-content: space-around;
+  }
+}

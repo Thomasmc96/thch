@@ -1,38 +1,46 @@
-.App {
-  text-align: center;
+:root {
+  --color-palet-1: #27496d;
+  --color-palet-2: #142850;
+  --color-palet-3: #0c7b93;
+  --color-palet-4: #00a8cc;
+  --text-color: #fff;
+  --max-width: 50rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: Nunito;
+  src: url("assets/font/Nunito-VariableFont_wght.ttf");
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+html {
+  min-height: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  background-color: var(
+    --color-palet-1
+  ); /* For browsers without gradient support (aka. internet explorer) */
+  background-image: linear-gradient(var(--color-palet-1), var(--color-palet-2));
+  color: var(--text-color);
+  min-height: 100%;
+  margin: 0;
+  font-family: Nunito;
+}
+
+.container {
+  max-width: var(--max-width);
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 1.5rem auto 0 auto;
+  padding: 0 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+.container h1 {
+  text-align: center;
+  font-size: 2.5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container p {
+  font-size: 1.2rem;
+  text-align: justify;
 }
