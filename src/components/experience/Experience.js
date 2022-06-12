@@ -43,8 +43,12 @@ const Experience = () => {
                 </p>
                 <i>2021 september - now</i>
                 <p>
-                  Text Text Text Text Text Text Text Text Text Text Text Text
-                  Text Text Text Text Text Text Text Text
+                  As a full-stack developer at Tales I've taken responsiblity of
+                  creating API's, fetching data from 3rd party collaborators,
+                  handling data between our server and database, creating design
+                  for the UI and working as a part of a team with the agile
+                  development method Scrum. The main tools I've used at Tales
+                  are PHP, MySQL, Vue, JavaScript, Sass and HTML.
                 </p>
               </div>
             </section>
@@ -63,9 +67,20 @@ const Experience = () => {
                 </p>
                 <i>2020 november - 2021 june</i>
                 <p>
-                  Text Text Text Text Text Text Text Text Text Text Text Text
-                  Text Text Text Text Text Text Text Text Text Text Text Text
-                  Text Text
+                  My time at Holder 100 happend at the end of my study as web
+                  developer. Here I've constructed websites for customers with
+                  the use of WordPress, PHP and MySQL. For my bachelor project I
+                  created a SPA with React, PHP and MySQL which the purpose of
+                  sharing files and tasks between Holder 100 and their
+                  customers. The final result is live at{" "}
+                  <a
+                    href="https://mit.holder100.dk"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    mit.holder100.dk
+                  </a>
+                  .
                 </p>
               </div>
             </section>
@@ -80,11 +95,10 @@ const Experience = () => {
                 </p>
                 <i>2019 july - 2019 november</i>
                 <p>
-                  Text Text Text Text Text Text Text Text Text Text Text Text
-                  Text Text Text Text Text Text Text Text Text Text Text Text
-                  Text Text Text Text Text Text Text Text Text Text Text Text
-                  Text Text Text Text Text Text Text Text Text Text Text Text
-                  Text Text Text Text Text Text
+                  Supeo hired me and two of my fellow students as an internship
+                  but also as a part student job. Here we developed websites for
+                  customers with tools as React, Vue, PHP, Laravel, Nodejs,
+                  MySQL, MongoDB and GraphQL.
                 </p>
               </div>
             </section>
@@ -109,13 +123,6 @@ const Experience = () => {
                 <i>
                   Average grade: <b>11.1</b>
                 </i>
-                <p>
-                  Text Text Text Text Text Text Text Text Text Text Text Text
-                  Text Text Text Text Text Text Text Text Text Text Text Text
-                  Text Text Text Text Text Text Text Text Text Text Text Text
-                  Text Text Text Text Text Text Text Text Text Text Text Text
-                  Text Text Text Text Text Text
-                </p>
               </div>
             </section>
             <section className="computerScience">
@@ -135,13 +142,6 @@ const Experience = () => {
                 <i>
                   Average grade: <b>11.7</b>
                 </i>
-                <p>
-                  Text Text Text Text Text Text Text Text Text Text Text Text
-                  Text Text Text Text Text Text Text Text Text Text Text Text
-                  Text Text Text Text Text Text Text Text Text Text Text Text
-                  Text Text Text Text Text Text Text Text Text Text Text Text
-                  Text Text Text Text Text Text
-                </p>
               </div>
             </section>
           </React.Fragment>

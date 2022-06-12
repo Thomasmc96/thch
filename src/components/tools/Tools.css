@@ -60,14 +60,20 @@
   background-color: var(--color-palet-4);
   animation: reactAnimation 1s ease-out;
   top: 35%;
-  left: 10%;
+  left: 5%;
 }
 
 .reactNative {
   background-color: var(--color-palet-4);
   animation: reactNativeAnimation 2s ease-out;
   top: 35%;
-  left: 40%;
+  left: 32%;
+}
+.vue {
+  background-color: #79cda7;
+  animation: vueAnimation 2s ease-out;
+  top: 35%;
+  left: 80%;
 }
 
 .php {
@@ -159,7 +165,7 @@
     top: 230%;
   }
   to {
-    left: 10%;
+    left: 5%;
     top: 35%;
   }
 }
@@ -170,9 +176,19 @@
     transform: rotate(0deg);
   }
   to {
-    left: 40%;
+    left: 32%;
     top: 35%;
     transform: rotate(360deg);
+  }
+}
+@keyframes vueAnimation {
+  from {
+    left: 110%;
+    top: 35%;
+  }
+  to {
+    left: 80%;
+    top: 35%;
   }
 }
 @keyframes phpAnimation {

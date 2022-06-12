@@ -18,6 +18,7 @@ const Tools = () => {
               <span className="badge javascript">JavaScript</span>
               <span className="badge react">React</span>
               <span className="badge reactNative">React Native</span>
+              <span className="badge vue">Vue</span>
             </div>
           </section>
           <section>
