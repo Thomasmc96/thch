@@ -1,10 +1,14 @@
 import React from "react";
 import "./Header.css";
 import { Link } from "react-router-dom";
+import background from "../../assets/img/backgrounds/background_blue6.jpg";
 
 const Header = (props) => {
   return (
-    <header className="header">
+    <header
+      className="header"
+      style={{ backgroundImage: "url(" + background + ")" }}
+    >
       <div className="headerTitle">
         {props.title}{" "}
         {props.icon && (

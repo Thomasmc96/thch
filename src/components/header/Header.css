@@ -1,13 +1,14 @@
 .header {
-  margin-top: 1rem;
-  width: 100%;
+  background-position: 0% 75%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .headerTitle {
   width: 100%;
   font-size: 3rem;
   text-align: center;
-  padding: 3rem 0;
+  padding: 5rem 0;
 }
 
 .headerTitle span {

@@ -1,0 +1,48 @@
+.contact a {
+  color: var(--color-palet-4);
+  text-decoration: none;
+  transition: all 0.2s;
+  display: inline-block;
+}
+
+.contact a:hover {
+  transform: rotate(10deg) translateY(10px);
+}
+
+.contact .icons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 6rem;
+}
+
+.contact .icons .icon {
+  font-size: 5rem;
+  visibility: hidden;
+  transition: all 0.2s;
+}
+
+.contact .icons .icon:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.contact .icons .github {
+  animation: moveUp 1s forwards 0s;
+}
+.contact .icons .linkedin {
+  animation: moveUp 1s forwards 0.5s;
+}
+.contact .icons .envelope {
+  animation: moveUp 1s forwards 1s;
+}
+
+@keyframes moveUp {
+  from {
+    margin-top: 20rem;
+    visibility: hidden;
+  }
+  to {
+    margin-top: 0rem;
+    visibility: visible;
+  }
+}
