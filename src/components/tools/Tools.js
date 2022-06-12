@@ -1,13 +1,14 @@
 import React from "react";
 import Header from "../header/Header";
 import "./Tools.css";
+import icon from "../../assets/img/icons/tools-white.svg";
 
 const Tools = () => {
   return (
     <React.Fragment>
-      <Header title="Tools" emoji="🔨" />
+      <Header title="Tools" icon={icon} />
       <div className="container tools">
-        <h3>These are tools that I have worked the most with</h3>
+        <h3>These are my most used tools</h3>
         <div className="toolsSections">
           <section>
             <h1>Frontend</h1>

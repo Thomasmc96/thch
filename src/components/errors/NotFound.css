@@ -1,0 +1,9 @@
+.notFound section img {
+  width: 10rem;
+  margin: 0 auto;
+}
+.notFound section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

@@ -6,10 +6,10 @@ const Header = (props) => {
   return (
     <header className="header">
       <div className="headerTitle">
-        {props.title}{" "}
-        <span role="img" aria-label="emoji">
+        {props.title} <img src={props.icon} alt="Title icon" className="icon" />
+        {/* <span role="img" aria-label="emoji">
           {props.emoji}
-        </span>
+        </span> */}
       </div>
       <nav className="navbar">
         <ul>

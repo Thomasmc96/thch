@@ -7,6 +7,9 @@
   --max-width: 50rem;
 }
 
+@import url("assets/css/scrollbar.css");
+@import url("assets/css/switch.css");
+
 @font-face {
   font-family: Nunito;
   src: url("assets/font/Nunito-VariableFont_wght.ttf");
@@ -14,6 +17,7 @@
 
 html {
   min-height: 100%;
+  overflow-y: overlay;
 }
 
 body {

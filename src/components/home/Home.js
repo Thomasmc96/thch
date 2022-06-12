@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../header/Header";
 import "./Home.css";
 import me from "../../assets/img/me.jpg";
+import icon from "../../assets/img/icons/home-white.svg";
 
 const Home = () => {
   const myBirthDate = new Date(1996, 5, 4); // Month needs to be -1
@@ -11,7 +12,7 @@ const Home = () => {
 
   return (
     <React.Fragment>
-      <Header title="Home" emoji="🏡" />
+      <Header title="Home" icon={icon} />
       <div className="container home">
         <h1>Welcome to TechThomas</h1>
         <div className="info">
@@ -23,7 +24,7 @@ const Home = () => {
               anyways thanks for swinging by!
             </p>
             <p>
-              So who am I? I'm a {myAge} year old full stack web developer who
+              So who am I? I'm a {myAge} year old full-stack web developer who
               lives in Næstved, Denmark. In my free time I love to be with
               friends and family, walk my dogs, play video games and code.
             </p>
