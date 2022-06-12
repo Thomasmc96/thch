@@ -1,17 +1,22 @@
-.tools {
+.tools h3 {
+  margin-bottom: 0;
+  animation: toolsHeader 4s;
+}
+
+.toolsSections {
   display: flex;
   flex-direction: row;
   max-width: 70rem;
   align-items: center;
-  min-height: 30rem;
+  min-height: 25rem;
 }
 
-.tools section {
-  /* width: 50%; */
+.toolsSections section {
   width: 18rem;
   margin: 0 auto;
 }
-.tools .badges {
+
+.toolsSections .badges {
   position: relative;
   width: 100%;
   height: 8rem;
@@ -26,18 +31,21 @@
   margin: 0.5rem;
   position: absolute;
 }
+
 .html5 {
   background-color: #e54c21;
   animation: htmlMove 2s ease-out;
   top: 0;
   left: 0;
 }
+
 .css3 {
   background-color: #2995ce;
   animation: cssMove 2s ease-out;
   top: 0;
   left: 32%;
 }
+
 .javascript {
   background-color: #f7e018;
   color: black;
@@ -45,42 +53,49 @@
   top: 0;
   left: 59%;
 }
+
 .react {
   background-color: var(--color-palet-4);
   animation: reactMove 1s ease-out;
   top: 35%;
   left: 10%;
 }
+
 .reactNative {
   background-color: var(--color-palet-4);
   animation: reactNativeMove 2s ease-out;
   top: 35%;
   left: 40%;
 }
+
 .php {
   background-color: #767bb3;
   animation: phpMove 3s ease-in-out;
   top: 0;
   left: 5%;
 }
+
 .nodejs {
   background-color: #90c53f;
   animation: nodejsMove 1.5s ease-out;
   top: 0;
   left: 29%;
 }
+
 .mysql {
   background-color: #f49823;
   animation: mysqlMove 2s ease-out;
   top: 0%;
   left: 60%;
 }
+
 .mongodb {
   background-color: #4ca84a;
   animation: mongodbMove 2s ease-out;
   top: 35%;
   left: 7%;
 }
+
 .api {
   background-color: #e6f3fe;
   color: black;
@@ -89,6 +104,7 @@
   left: 48%;
 }
 
+/* Animations */
 @keyframes htmlMove {
   from {
     left: -20%;
@@ -189,9 +205,22 @@
     top: 35%;
   }
 }
+@keyframes toolsHeader {
+  0% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
+/* Mobile */
 @media (max-width: 650px) {
-  .tools {
+  .toolsSections {
     flex-direction: column;
+    overflow: hidden;
   }
 }
