@@ -30,18 +30,19 @@
   font-size: 1.2rem;
   margin: 0.5rem;
   position: absolute;
+  transition: all 0.3s;
 }
 
 .html5 {
   background-color: #e54c21;
-  animation: htmlMove 2s ease-out;
+  animation: htmlAnimation 2s ease-out;
   top: 0;
   left: 0;
 }
 
 .css3 {
   background-color: #2995ce;
-  animation: cssMove 2s ease-out;
+  animation: cssAnimation 2s ease-out;
   top: 0;
   left: 32%;
 }
@@ -49,49 +50,49 @@
 .javascript {
   background-color: #f7e018;
   color: black;
-  animation: javascriptMove 1.5s ease-out;
+  animation: javascriptAnimation 1.5s ease-out;
   top: 0;
   left: 59%;
 }
 
 .react {
   background-color: var(--color-palet-4);
-  animation: reactMove 1s ease-out;
+  animation: reactAnimation 1s ease-out;
   top: 35%;
   left: 10%;
 }
 
 .reactNative {
   background-color: var(--color-palet-4);
-  animation: reactNativeMove 2s ease-out;
+  animation: reactNativeAnimation 2s ease-out;
   top: 35%;
   left: 40%;
 }
 
 .php {
   background-color: #767bb3;
-  animation: phpMove 3s ease-in-out;
+  animation: phpAnimation 3s ease-in-out;
   top: 0;
   left: 5%;
 }
 
 .nodejs {
   background-color: #90c53f;
-  animation: nodejsMove 1.5s ease-out;
+  animation: nodejsAnimation 1.5s ease-out;
   top: 0;
   left: 29%;
 }
 
 .mysql {
   background-color: #f49823;
-  animation: mysqlMove 2s ease-out;
+  animation: mysqlAnimation 2s ease-out;
   top: 0%;
   left: 60%;
 }
 
 .mongodb {
   background-color: #4ca84a;
-  animation: mongodbMove 2s ease-out;
+  animation: mongodbAnimation 2s ease-out;
   top: 35%;
   left: 7%;
 }
@@ -99,13 +100,29 @@
 .api {
   background-color: #e6f3fe;
   color: black;
-  animation: apiMove 2s ease-out;
+  animation: apiAnimation 2s ease-out;
   top: 35%;
   left: 48%;
 }
 
+.html5:hover,
+.javascript:hover,
+.reactNative:hover,
+.nodejs:hover,
+.mongodb:hover {
+  transform: rotate(10deg) translateX(5px);
+}
+
+.css3:hover,
+.react:hover,
+.php:hover,
+.mysql:hover,
+.api:hover {
+  transform: rotate(-10deg) translateY(-5px);
+}
+
 /* Animations */
-@keyframes htmlMove {
+@keyframes htmlAnimation {
   from {
     left: -20%;
     top: 0;
@@ -115,7 +132,7 @@
     top: 0;
   }
 }
-@keyframes cssMove {
+@keyframes cssAnimation {
   from {
     left: -20%;
     top: -250%;
@@ -125,7 +142,7 @@
     top: 0;
   }
 }
-@keyframes javascriptMove {
+@keyframes javascriptAnimation {
   from {
     left: 80%;
     top: -70%;
@@ -135,7 +152,7 @@
     top: 0;
   }
 }
-@keyframes reactMove {
+@keyframes reactAnimation {
   from {
     left: 30%;
     top: 230%;
@@ -145,17 +162,19 @@
     top: 35%;
   }
 }
-@keyframes reactNativeMove {
+@keyframes reactNativeAnimation {
   from {
     left: 80%;
     top: 150%;
+    transform: rotate(0deg);
   }
   to {
     left: 40%;
     top: 35%;
+    transform: rotate(360deg);
   }
 }
-@keyframes phpMove {
+@keyframes phpAnimation {
   from {
     left: 100%;
     top: 300%;
@@ -165,7 +184,7 @@
     top: 0;
   }
 }
-@keyframes nodejsMove {
+@keyframes nodejsAnimation {
   from {
     left: 0;
     top: 300%;
@@ -175,7 +194,7 @@
     top: 0;
   }
 }
-@keyframes mysqlMove {
+@keyframes mysqlAnimation {
   from {
     left: 56%;
     top: 300%;
@@ -185,7 +204,7 @@
     top: 0%;
   }
 }
-@keyframes mongodbMove {
+@keyframes mongodbAnimation {
   from {
     left: 27%;
     top: 180%;
@@ -195,7 +214,7 @@
     top: 35%;
   }
 }
-@keyframes apiMove {
+@keyframes apiAnimation {
   from {
     left: 48%;
     top: 150%;
@@ -214,6 +233,12 @@
   }
   100% {
     opacity: 1;
+  }
+}
+
+@keyframes hover1 {
+  to {
+    transform: translate(-1px, -2px);
   }
 }
 

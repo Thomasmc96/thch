@@ -1,0 +1,25 @@
+.experience section {
+  display: flex;
+  flex-direction: column;
+}
+
+.tales {
+  animation: fadeIn 3s 0s forwards;
+  opacity: 0;
+}
+
+.holder100 {
+  animation: fadeIn 3s 0.5s forwards;
+  opacity: 0;
+}
+
+.supeo {
+  animation: fadeIn 3s 1s forwards;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
