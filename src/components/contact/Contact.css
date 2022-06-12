@@ -1,11 +1,11 @@
-.contact a {
+.contact .mail {
   color: var(--color-palet-4);
   text-decoration: none;
   transition: all 0.2s;
   display: inline-block;
 }
 
-.contact a:hover {
+.contact .mail:hover {
   transform: rotate(10deg) translateY(10px);
 }
 
@@ -21,6 +21,10 @@
   transition: all 0.2s;
 }
 
+.contact .icons a {
+  color: white;
+}
+
 .contact .icons .icon:hover {
   cursor: pointer;
   transform: scale(1.2);
@@ -29,20 +33,23 @@
 .contact .icons .github {
   animation: moveUp 1s forwards 0s;
 }
+
 .contact .icons .linkedin {
   animation: moveUp 1s forwards 0.5s;
 }
+
 .contact .icons .envelope {
   animation: moveUp 1s forwards 1s;
 }
 
 @keyframes moveUp {
   from {
-    margin-top: 20rem;
+    transform: translateY(20rem);
     visibility: hidden;
   }
   to {
-    margin-top: 0rem;
+    transform: translateY(0rem);
+
     visibility: visible;
   }
 }

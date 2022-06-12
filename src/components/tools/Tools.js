@@ -2,11 +2,22 @@ import React from "react";
 import Header from "../header/Header";
 import "./Tools.css";
 import icon from "../../assets/img/icons/tools-white.svg";
+import backgroundPc from "../../assets/img/backgrounds/background_sunrise_pc.jpg";
+import backgroundMobile from "../../assets/img/backgrounds/background_sunrise_mobile.jpg";
 
 const Tools = () => {
+  // Get window width
+  const width =
+    window.innerWidth ||
+    document.documentElement.clientWidth ||
+    document.body.clientWidth;
+
+  // Set header background
+  const background = width > 1000 ? backgroundPc : backgroundMobile;
+
   return (
     <React.Fragment>
-      <Header title="Tools" icon={icon} />
+      <Header title="Tools" icon={icon} background={background} />
       <div className="container tools">
         <h3>These are my most used tools</h3>
         <div className="toolsSections">

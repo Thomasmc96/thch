@@ -3,6 +3,8 @@ import Header from "../header/Header";
 import "./Home.css";
 import me from "../../assets/img/me.jpg";
 import icon from "../../assets/img/icons/home-white.svg";
+import backgroundPc from "../../assets/img/backgrounds/background_night_pc.jpg";
+import backgroundMobile from "../../assets/img/backgrounds/background_night_mobile.jpg";
 
 const Home = () => {
   const myBirthDate = new Date(1996, 5, 4); // Month needs to be -1
@@ -10,9 +12,18 @@ const Home = () => {
   const diffAsDate = new Date(diff);
   const myAge = Math.abs(diffAsDate.getUTCFullYear() - 1970);
 
+  // Get window width
+  const width =
+    window.innerWidth ||
+    document.documentElement.clientWidth ||
+    document.body.clientWidth;
+
+  // Set header background
+  const background = width > 1000 ? backgroundPc : backgroundMobile;
+
   return (
     <React.Fragment>
-      <Header title="Home" icon={icon} />
+      <Header title="Home" icon={icon} background={background} />
       <div className="container home">
         <h1>Welcome to TechThomas</h1>
         <div className="info">

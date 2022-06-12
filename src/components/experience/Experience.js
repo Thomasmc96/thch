@@ -3,6 +3,8 @@ import Header from "../header/Header";
 import "./Experience.css";
 import icon from "../../assets/img/icons/experience-white.svg";
 import icon2 from "../../assets/img/icons/school-white.svg";
+import backgroundPc from "../../assets/img/backgrounds/background_day_pc.jpg";
+import backgroundMobile from "../../assets/img/backgrounds/background_day_mobile.jpg";
 import talesBrand from "../../assets/img/tales.jpg";
 import holder100Brand from "../../assets/img/holder100.jpg";
 import supeoBrand from "../../assets/img/supeo.jpg";
@@ -14,9 +16,18 @@ const Experience = () => {
   // Handle switch
   const handleShowSchool = () => setShowSchool(!showSchool);
 
+  // Get window width
+  const width =
+    window.innerWidth ||
+    document.documentElement.clientWidth ||
+    document.body.clientWidth;
+
+  // Set header background
+  const background = width > 1000 ? backgroundPc : backgroundMobile;
+
   return (
     <React.Fragment>
-      <Header title="Experience" icon={icon} />
+      <Header title="Experience" icon={icon} background={background} />
       <div className="switchBox">
         <img src={icon} alt="Work Icon" className="icon workIcon" />
         <label className="switch">

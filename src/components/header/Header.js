@@ -1,19 +1,20 @@
 import React from "react";
 import "./Header.css";
 import { Link } from "react-router-dom";
-import background from "../../assets/img/backgrounds/background_blue6.jpg";
 
 const Header = (props) => {
   return (
-    <header
-      className="header"
-      style={{ backgroundImage: "url(" + background + ")" }}
-    >
-      <div className="headerTitle">
-        {props.title}{" "}
-        {props.icon && (
-          <img src={props.icon} alt="Title icon" className="icon" />
-        )}
+    <header>
+      <div
+        className="headerImg"
+        style={{ backgroundImage: "url(" + props.background + ")" }}
+      >
+        <div className="headerTitle">
+          {props.title}{" "}
+          {props.icon && (
+            <img src={props.icon} alt="Title icon" className="icon" />
+          )}
+        </div>
       </div>
       <nav className="navbar">
         <ul>
