@@ -284,9 +284,11 @@
 
 /* Mobile */
 @media (max-width: 650px) {
+  .tools {
+    overflow: hidden;
+  }
   .toolsSections {
     flex-direction: column;
-    overflow: hidden;
   }
 
   .tools h3 {

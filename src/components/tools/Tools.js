@@ -18,7 +18,7 @@ const Tools = () => {
   // useEffect hook that fires when component has mounted
   useEffect(() => {
     document.title = "Tools | TechThomas";
-  })
+  });
 
   return (
     <React.Fragment>
@@ -37,7 +37,7 @@ const Tools = () => {
               <span className="badge vue">Vue</span>
             </div>
           </section>
-          <section>
+          <section className="backend">
             <h1>Backend</h1>
             <div className="badges">
               <span className="badge php">PHP</span>

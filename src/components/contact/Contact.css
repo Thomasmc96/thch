@@ -58,3 +58,13 @@
     visibility: visible;
   }
 }
+
+/* Mobile */
+@media (max-width: 650px) {
+  .contact {
+    overflow: hidden;
+  }
+  .icons {
+    overflow: visible;
+  }
+}

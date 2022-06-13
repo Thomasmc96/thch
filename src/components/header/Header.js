@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 const Header = (props) => {
   return (
     <header>
+      {/* Header backgrounds by Ditte Lykke Hansen @devditte.dk */}
       <div
         className="headerImg"
         style={{ backgroundImage: "url(" + props.background + ")" }}
