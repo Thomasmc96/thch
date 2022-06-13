@@ -3,11 +3,11 @@
   background-repeat: no-repeat;
   background-size: cover;
 
-  position: relative;
+  /* position: relative;
   overflow: hidden;
-  opacity: 0.99;
+  opacity: 0.99; */
 }
-.headerImg::before,
+/* .headerImg::before,
 .headerImg::after {
   content: "";
   display: block;
@@ -20,7 +20,7 @@
   background-position: 0% 75%;
   background-repeat: no-repeat;
   background-size: cover;
-}
+} */
 
 .headerTitle {
   width: 100%;
@@ -66,5 +66,9 @@
   }
   .navbar ul li a {
     font-size: 1rem;
+  }
+
+  .headerTitle {
+    padding: 4rem 0;
   }
 }
