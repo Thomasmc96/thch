@@ -35,9 +35,10 @@ const Experience = () => {
       <Header title="Experience" icon={icon} background={background} />
       <div className="switchBox">
         <img src={icon} alt="Work Icon" className="icon workIcon" />
-        <label className="switch">
+        <label className="switch" for="switch">
           <input
             type="checkbox"
+            name="switch"
             onChange={handleShowSchool}
             checked={showSchool}
           />
