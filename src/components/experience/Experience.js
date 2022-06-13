@@ -28,7 +28,7 @@ const Experience = () => {
   // useEffect hook that fires when component has mounted
   useEffect(() => {
     document.title = "Experience | TechThomas";
-  })
+  });
 
   return (
     <React.Fragment>
@@ -86,7 +86,7 @@ const Experience = () => {
                   My time at Holder 100 happend at the end of my study as web
                   developer. Here I've constructed websites for customers with
                   the use of WordPress, PHP and MySQL. For my bachelor project I
-                  created a SPA with React, PHP and MySQL which the purpose of
+                  created a SPA with React, PHP and MySQL with the purpose of
                   sharing files and tasks between Holder 100 and their
                   customers. The final result is live at{" "}
                   <a
