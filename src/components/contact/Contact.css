@@ -49,6 +49,10 @@
   animation: moveUp 1s forwards 1s;
 }
 
+.contact h1 span:first-child:hover {
+  cursor: pointer;
+}
+
 @keyframes moveUp {
   from {
     transform: translateY(20rem);

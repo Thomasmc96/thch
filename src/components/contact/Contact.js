@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import Header from "../header/Header";
 import "./Contact.css";
 import icon from "../../assets/img/icons/contact-white.svg";
@@ -10,6 +10,8 @@ import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const Contact = () => {
+  const [showEasterEgg, setShowEasterEgg] = useState(false);
+
   // Get window width
   const width =
     window.innerWidth ||
@@ -24,11 +26,21 @@ const Contact = () => {
     document.title = "Contact | TechThomas";
   });
 
+  // Show easter egg function
+  const handleEasterEgg = () => setShowEasterEgg(true);
+
   return (
     <React.Fragment>
       <Header title="Contact" icon={icon} background={background} />
       <div className="container contact">
-        <h1>Let me hear from you!</h1>
+        <h1>
+          Let me hear from you<span onClick={handleEasterEgg}>!</span>{" "}
+          {showEasterEgg && (
+            <span role="img" aria-label="emoji">
+              🦃
+            </span>
+          )}
+        </h1>
         <h2>
           <a href="mailto:tc@techthomas.dk" className="mail">
             tc@techthomas.dk
