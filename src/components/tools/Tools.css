@@ -129,7 +129,8 @@
 .react:hover,
 .php:hover,
 .mysql:hover,
-.api:hover {
+.api:hover,
+.vue:hover {
   transform: rotate(-10deg) translateY(-5px);
 }
 
