@@ -3,6 +3,8 @@ import "./Header.css";
 import { Link } from "react-router-dom";
 
 const Header = (props) => {
+  const scrollToTop = () => window.scrollTo(0, 0);
+
   return (
     <header>
       {/* Header backgrounds by Ditte Lykke Hansen @devditte.dk */}
@@ -20,16 +22,24 @@ const Header = (props) => {
       <nav className="navbar">
         <ul>
           <li>
-            <Link to={"/"}>Home</Link>
+            <Link to={"/"} onClick={scrollToTop}>
+              Home
+            </Link>
           </li>
           <li>
-            <Link to={"/tools"}>Tools</Link>
+            <Link to={"/tools"} onClick={scrollToTop}>
+              Tools & Work
+            </Link>
           </li>
           <li>
-            <Link to={"/experience"}>Experience</Link>
+            <Link to={"/experience"} onClick={scrollToTop}>
+              Experience
+            </Link>
           </li>
           <li>
-            <Link to={"/contact"}>Contact</Link>
+            <Link to={"/contact"} onClick={scrollToTop}>
+              Contact
+            </Link>
           </li>
         </ul>
       </nav>

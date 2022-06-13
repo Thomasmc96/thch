@@ -1,11 +1,11 @@
 .tools {
-  padding-bottom: 10rem;
+  padding-bottom: 5rem;
 }
 
-.tools h3 {
+.tools h1 {
   margin-bottom: 0;
-  animation: toolsHeader 4s;
-  font-size: 2rem;
+  /* animation: toolsHeader 4s; */
+  /* font-size: 2rem; */
 }
 
 .toolsSections {
@@ -19,6 +19,10 @@
 .toolsSections section {
   width: 18rem;
   margin: 0 auto;
+}
+
+.toolsSections h2 {
+  color: var(--color-palet-4);
 }
 
 .toolsSections .badges {
@@ -132,6 +136,29 @@
 .api:hover,
 .vue:hover {
   transform: rotate(-10deg) translateY(-5px);
+}
+
+.works {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 8%;
+  padding-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.works img {
+  width: 9rem;
+  height: 9rem;
+  border-radius: 50%;
+}
+
+.work .animate img {
+  animation: rollIn 2s ease-out;
+}
+
+.works img:hover {
+  cursor: pointer;
 }
 
 /* Animations */
@@ -283,6 +310,15 @@
   }
 }
 
+@keyframes rollIn {
+  from {
+    transform: translateX(-50rem) rotate(0deg);
+  }
+  to {
+    transform: translateX(0rem) rotate(360deg);
+  }
+}
+
 /* Mobile */
 @media (max-width: 650px) {
   .tools {
@@ -291,8 +327,12 @@
   .toolsSections {
     flex-direction: column;
   }
+  .toolsSections h2 {
+    font-size: 1.2rem;
+  }
 
-  .tools h3 {
-    font-size: unset;
+  .tools h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
   }
 }
