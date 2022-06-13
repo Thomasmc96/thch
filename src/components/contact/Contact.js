@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "../header/Header";
 import "./Contact.css";
 import icon from "../../assets/img/icons/contact-white.svg";
@@ -18,6 +18,11 @@ const Contact = () => {
 
   // Set header background
   const background = width > 1000 ? backgroundPc : backgroundMobile;
+
+  // useEffect hook that fires when component has mounted
+  useEffect(() => {
+    document.title = "Contact | TechThomas";
+  })
 
   return (
     <React.Fragment>

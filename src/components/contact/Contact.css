@@ -1,3 +1,7 @@
+.contact {
+  padding-bottom: 5rem;
+}
+
 .contact .mail {
   color: var(--color-palet-4);
   text-decoration: none;
@@ -47,6 +51,7 @@
     transform: translateY(20rem);
     visibility: hidden;
   }
+
   to {
     transform: translateY(0rem);
 

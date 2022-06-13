@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "../header/Header";
 import "./Tools.css";
 import icon from "../../assets/img/icons/tools-white.svg";
@@ -14,6 +14,11 @@ const Tools = () => {
 
   // Set header background
   const background = width > 1000 ? backgroundPc : backgroundMobile;
+
+  // useEffect hook that fires when component has mounted
+  useEffect(() => {
+    document.title = "Tools | TechThomas";
+  })
 
   return (
     <React.Fragment>

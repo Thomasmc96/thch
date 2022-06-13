@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Header from "../header/Header";
 import "./Experience.css";
 import icon from "../../assets/img/icons/experience-white.svg";
@@ -24,6 +24,11 @@ const Experience = () => {
 
   // Set header background
   const background = width > 1000 ? backgroundPc : backgroundMobile;
+
+  // useEffect hook that fires when component has mounted
+  useEffect(() => {
+    document.title = "Experience | TechThomas";
+  })
 
   return (
     <React.Fragment>

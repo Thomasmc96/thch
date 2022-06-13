@@ -1,3 +1,7 @@
+.tools {
+  padding-bottom: 10rem;
+}
+
 .tools h3 {
   margin-bottom: 0;
   animation: toolsHeader 4s;
@@ -69,6 +73,7 @@
   top: 35%;
   left: 32%;
 }
+
 .vue {
   background-color: #79cda7;
   animation: vueAnimation 2s ease-out;
@@ -134,120 +139,144 @@
     left: -20%;
     top: 0;
   }
+
   to {
     left: 0;
     top: 0;
   }
 }
+
 @keyframes cssAnimation {
   from {
     left: -20%;
     top: -250%;
   }
+
   to {
     left: 32%;
     top: 0;
   }
 }
+
 @keyframes javascriptAnimation {
   from {
     left: 80%;
     top: -70%;
   }
+
   to {
     left: 59%;
     top: 0;
   }
 }
+
 @keyframes reactAnimation {
   from {
     left: 30%;
     top: 230%;
   }
+
   to {
     left: 5%;
     top: 35%;
   }
 }
+
 @keyframes reactNativeAnimation {
   from {
     left: 80%;
     top: 150%;
     transform: rotate(0deg);
   }
+
   to {
     left: 32%;
     top: 35%;
     transform: rotate(360deg);
   }
 }
+
 @keyframes vueAnimation {
   from {
     left: 110%;
     top: 35%;
   }
+
   to {
     left: 80%;
     top: 35%;
   }
 }
+
 @keyframes phpAnimation {
   from {
     left: 100%;
     top: 300%;
   }
+
   to {
     left: 5%;
     top: 0;
   }
 }
+
 @keyframes nodejsAnimation {
   from {
     left: 0;
     top: 300%;
   }
+
   to {
     left: 29%;
     top: 0;
   }
 }
+
 @keyframes mysqlAnimation {
   from {
     left: 56%;
     top: 300%;
   }
+
   to {
     left: 60%;
     top: 0%;
   }
 }
+
 @keyframes mongodbAnimation {
   from {
     left: 27%;
     top: 180%;
   }
+
   to {
     left: 7%;
     top: 35%;
   }
 }
+
 @keyframes apiAnimation {
   from {
     left: 48%;
     top: 150%;
   }
+
   to {
     left: 48%;
     top: 35%;
   }
 }
+
 @keyframes toolsHeader {
   0% {
     opacity: 0;
   }
+
   75% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }

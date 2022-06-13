@@ -4,6 +4,7 @@
   border-radius: 16px;
   opacity: 1;
   transition: opacity 500ms ease 0s;
+  height: auto;
 }
 
 .info {

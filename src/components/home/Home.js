@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "../header/Header";
 import "./Home.css";
 import me from "../../assets/img/me.jpg";
@@ -20,6 +20,11 @@ const Home = () => {
 
   // Set header background
   const background = width > 1000 ? backgroundPc : backgroundMobile;
+
+  // useEffect hook that fires when component has mounted
+  useEffect(() => {
+    document.title = "Home | TechThomas";
+  })
 
   return (
     <React.Fragment>
@@ -45,7 +50,7 @@ const Home = () => {
             </p>
           </div>
           <div className="img">
-            <img src={me} alt="Me" className="me" loading="lazy" />
+            <img src={me} alt="Me" className="me" loading="lazy" width="556px" height="646px" />
             <p>And here I am</p>
           </div>
         </div>
