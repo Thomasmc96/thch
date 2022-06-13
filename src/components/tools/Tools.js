@@ -1,15 +1,19 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
+// import { Link } from "react-router-dom";
 import Header from "../header/Header";
 import "./Tools.css";
 import icon from "../../assets/img/icons/tools-white.svg";
 import backgroundPc from "../../assets/img/backgrounds/background_sunrise_pc.jpg";
 import backgroundMobile from "../../assets/img/backgrounds/background_sunrise_mobile.jpg";
-import toucanThiefLogo from "../../assets/img/toucanThiefLogo.png";
-import traekunstLogo from "../../assets/img/traekunstLogo.png";
-import craftdLogo from "../../assets/img/craftdLogo.png";
+// import toucanThiefLogo from "../../assets/img/toucanThiefLogo.png";
+// import traekunstLogo from "../../assets/img/traekunstLogo.png";
+// import craftdLogo from "../../assets/img/craftdLogo.png";
 
 const Tools = () => {
-  const [scrolled, setScrolled] = useState(false);
+  // const [scrolled, setScrolled] = useState(false);
+
+  // Scroll to top of page
+  // const scrollToTop = () => window.scrollTo(0, 0);
 
   // Get window width
   const width =
@@ -22,23 +26,23 @@ const Tools = () => {
 
   // useEffect hook that fires when component has mounted
   useEffect(() => {
-    document.title = "Tools & Work | TechThomas";
+    document.title = "Tools | TechThomas";
 
-    // Set scrolled
-    const onScroll = () => {
-      if (window.pageYOffset > 0) {
-        setScrolled(true);
-      }
-    };
-    // clean up code
-    window.removeEventListener("scroll", onScroll);
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
+    // // Set scrolled
+    // const onScroll = () => {
+    //   if (window.pageYOffset > 0) {
+    //     setScrolled(true);
+    //   }
+    // };
+    // // clean up code
+    // window.removeEventListener("scroll", onScroll);
+    // window.addEventListener("scroll", onScroll, { passive: true });
+    // return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
   return (
     <React.Fragment>
-      <Header title="Tools & Work" icon={icon} background={background} />
+      <Header title="Tools" icon={icon} background={background} />
       <section className="container tools">
         <h1>These are my most used tools</h1>
         <div className="toolsSections">
@@ -65,14 +69,20 @@ const Tools = () => {
           </section>
         </div>
       </section>
-      <section className="container work">
+      {/* <section className="container work">
         <h1>Some work and projects I did</h1>
         <div className={scrolled ? "works animate" : "works"}>
-          <img src={traekunstLogo} alt="Traekunst Logo" />
-          <img src={craftdLogo} alt="Craftd Logo" />
-          <img src={toucanThiefLogo} alt="Toucan Thief Logo" />
+          <Link to={"traekunst"} onClick={scrollToTop}>
+            <img src={traekunstLogo} alt="Traekunst Logo" />
+          </Link>
+          <Link to={"craftd"} onClick={scrollToTop}>
+            <img src={craftdLogo} alt="Craftd Logo" />
+          </Link>
+          <Link to={"toucan-thief"} onClick={scrollToTop}>
+            <img src={toucanThiefLogo} alt="Toucan Thief Logo" />
+          </Link>
         </div>
-      </section>
+      </section> */}
     </React.Fragment>
   );
 };

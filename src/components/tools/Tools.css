@@ -4,7 +4,7 @@
 
 .tools h1 {
   margin-bottom: 0;
-  /* animation: toolsHeader 4s; */
+  animation: toolsHeader 4s;
   /* font-size: 2rem; */
 }
 

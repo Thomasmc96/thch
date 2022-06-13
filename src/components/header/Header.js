@@ -3,6 +3,7 @@ import "./Header.css";
 import { Link } from "react-router-dom";
 
 const Header = (props) => {
+  // Scroll to top of page
   const scrollToTop = () => window.scrollTo(0, 0);
 
   return (
@@ -28,7 +29,7 @@ const Header = (props) => {
           </li>
           <li>
             <Link to={"/tools"} onClick={scrollToTop}>
-              Tools & Work
+              Tools
             </Link>
           </li>
           <li>

@@ -84,4 +84,8 @@
     width: 4rem;
     height: 4rem;
   }
+
+  .experience .description {
+    margin-right: 0.9rem;
+  }
 }
