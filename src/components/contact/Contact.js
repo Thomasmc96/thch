@@ -22,7 +22,7 @@ const Contact = () => {
   // useEffect hook that fires when component has mounted
   useEffect(() => {
     document.title = "Contact | TechThomas";
-  })
+  });
 
   return (
     <React.Fragment>
@@ -39,6 +39,7 @@ const Contact = () => {
             href="https://github.com/thom9521"
             target="_blank"
             rel="noreferrer"
+            className="iconLink"
           >
             <FontAwesomeIcon icon={faGithub} className="icon github" />
           </a>
@@ -46,10 +47,11 @@ const Contact = () => {
             href="https://www.linkedin.com/in/thomas-m-c/"
             target="_blank"
             rel="noreferrer"
+            className="iconLink"
           >
             <FontAwesomeIcon icon={faLinkedin} className="icon linkedin" />
           </a>
-          <a href="mailto:tc@techthomas.dk">
+          <a href="mailto:tc@techthomas.dk" className="iconLink">
             <FontAwesomeIcon icon={faEnvelope} className="icon envelope" />
           </a>
         </div>

@@ -44,14 +44,14 @@
 
 .html5 {
   background-color: #e54c21;
-  animation: htmlAnimation 2s ease-out;
+  animation: htmlAnimation 2s ease-in-out;
   top: 0;
   left: 0;
 }
 
 .css3 {
   background-color: #2995ce;
-  animation: cssAnimation 2s ease-out;
+  animation: cssAnimation 2s ease-in-out;
   top: 0;
   left: 32%;
 }
@@ -59,28 +59,28 @@
 .javascript {
   background-color: #f7e018;
   color: black;
-  animation: javascriptAnimation 1.5s ease-out;
+  animation: javascriptAnimation 1.5s ease-in-out;
   top: 0;
   left: 59%;
 }
 
 .react {
   background-color: var(--color-palet-4);
-  animation: reactAnimation 1s ease-out;
+  animation: reactAnimation 1s ease-in-out;
   top: 35%;
   left: 5%;
 }
 
 .reactNative {
   background-color: var(--color-palet-4);
-  animation: reactNativeAnimation 2s ease-out;
+  animation: reactNativeAnimation 2s ease-in-out;
   top: 35%;
   left: 32%;
 }
 
 .vue {
   background-color: #79cda7;
-  animation: vueAnimation 2s ease-out;
+  animation: vueAnimation 2s ease-in-out;
   top: 35%;
   left: 80%;
 }
@@ -94,21 +94,21 @@
 
 .nodejs {
   background-color: #90c53f;
-  animation: nodejsAnimation 1.5s ease-out;
+  animation: nodejsAnimation 1.5s ease-in-out;
   top: 0;
   left: 29%;
 }
 
 .mysql {
   background-color: #f49823;
-  animation: mysqlAnimation 2s ease-out;
+  animation: mysqlAnimation 2s ease-in-out;
   top: 0%;
   left: 60%;
 }
 
 .mongodb {
   background-color: #4ca84a;
-  animation: mongodbAnimation 2s ease-out;
+  animation: mongodbAnimation 2s ease-in-out;
   top: 35%;
   left: 7%;
 }
@@ -116,7 +116,7 @@
 .api {
   background-color: #e6f3fe;
   color: black;
-  animation: apiAnimation 2s ease-out;
+  animation: apiAnimation 2s ease-in-out;
   top: 35%;
   left: 48%;
 }
@@ -139,7 +139,7 @@
 }
 
 .works {
-  margin-top: 2rem;
+  margin-top: 3rem;
   display: flex;
   justify-content: center;
   gap: 8%;
@@ -151,10 +151,17 @@
   width: 9rem;
   height: 9rem;
   border-radius: 50%;
+  visibility: hidden;
+  transition: all 0.3s;
+}
+
+.works img:hover {
+  transform: scale(1.2);
 }
 
 .work .animate img {
   animation: rollIn 2s ease-out;
+  visibility: visible;
 }
 
 .works img:hover {
