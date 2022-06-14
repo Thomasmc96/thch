@@ -24,7 +24,7 @@ const Home = () => {
   // useEffect hook that fires when component has mounted
   useEffect(() => {
     document.title = "Home | TechThomas";
-  })
+  });
 
   return (
     <React.Fragment>
@@ -50,7 +50,17 @@ const Home = () => {
             </p>
           </div>
           <div className="img">
-            <img src={me} alt="Me" className="me" loading="lazy" width="556px" height="646px" />
+            <picture>
+              <source />
+              <img
+                srcSet={`${me} 125w, ${me} 250w, ${me} 500w, ${me} 512w`}
+                alt="Me"
+                className="me"
+                loading="lazy"
+                width="556px"
+                height="646px"
+              />
+            </picture>
             <p>And here I am</p>
           </div>
         </div>

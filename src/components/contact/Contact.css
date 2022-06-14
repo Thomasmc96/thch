@@ -22,6 +22,9 @@
 .contact .icons .icon {
   font-size: 5rem;
   visibility: hidden;
+}
+
+.contact .icons .iconLink {
   transition: all 0.2s;
 }
 
@@ -29,7 +32,7 @@
   color: white;
 }
 
-.contact .icons .icon:hover {
+.contact .icons .iconLink:hover {
   cursor: pointer;
   transform: scale(1.2);
 }
@@ -46,6 +49,10 @@
   animation: moveUp 1s forwards 1s;
 }
 
+.contact h1 span:first-child:hover {
+  cursor: pointer;
+}
+
 @keyframes moveUp {
   from {
     transform: translateY(20rem);
@@ -54,7 +61,16 @@
 
   to {
     transform: translateY(0rem);
-
     visibility: visible;
+  }
+}
+
+/* Mobile */
+@media (max-width: 650px) {
+  .contact {
+    overflow: hidden;
+  }
+  .icons {
+    overflow: visible;
   }
 }

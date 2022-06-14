@@ -28,7 +28,7 @@ const Experience = () => {
   // useEffect hook that fires when component has mounted
   useEffect(() => {
     document.title = "Experience | TechThomas";
-  })
+  });
 
   return (
     <React.Fragment>
@@ -59,7 +59,7 @@ const Experience = () => {
                   </a>
                 </p>
                 <i>2021 september - now</i>
-                <p>
+                <p className="description">
                   As a full-stack developer at Tales I've taken responsiblity of
                   creating API's, fetching data from 3rd party collaborators,
                   handling data between our server and database, creating design
@@ -83,11 +83,11 @@ const Experience = () => {
                   </a>
                 </p>
                 <i>2020 november - 2021 june</i>
-                <p>
+                <p className="description">
                   My time at Holder 100 happend at the end of my study as web
                   developer. Here I've constructed websites for customers with
                   the use of WordPress, PHP and MySQL. For my bachelor project I
-                  created a SPA with React, PHP and MySQL which the purpose of
+                  created a SPA with React, PHP and MySQL with the purpose of
                   sharing files and tasks between Holder 100 and their
                   customers. The final result is live at{" "}
                   <a
@@ -111,8 +111,8 @@ const Experience = () => {
                   </a>
                 </p>
                 <i>2019 july - 2019 november</i>
-                <p>
-                  Supeo hired me and two of my fellow students as an internship
+                <p className="description">
+                  Supeo hired me and two of my fellow students for an internship
                   but also as a part student job. Here we developed websites for
                   customers with tools as React, Vue, PHP, Laravel, Nodejs,
                   MySQL, MongoDB and GraphQL.

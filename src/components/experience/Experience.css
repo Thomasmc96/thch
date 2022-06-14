@@ -18,13 +18,13 @@
   width: 8rem;
   object-fit: contain;
   border-radius: 50%;
-  margin-top: 3rem;
 }
 
 .experience section h2 {
   font-size: 2rem;
   margin-bottom: 0.5rem;
   margin-top: 0;
+  text-align: left;
 }
 
 .experience section p {
@@ -83,6 +83,9 @@
   .experience section img {
     width: 4rem;
     height: 4rem;
-    margin-top: 0;
+  }
+
+  .experience .description {
+    margin-right: 0.9rem;
   }
 }

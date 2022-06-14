@@ -1,11 +1,11 @@
 .tools {
-  padding-bottom: 10rem;
+  padding-bottom: 5rem;
 }
 
-.tools h3 {
+.tools h1 {
   margin-bottom: 0;
   animation: toolsHeader 4s;
-  font-size: 2rem;
+  /* font-size: 2rem; */
 }
 
 .toolsSections {
@@ -19,6 +19,10 @@
 .toolsSections section {
   width: 18rem;
   margin: 0 auto;
+}
+
+.toolsSections h2 {
+  color: var(--color-palet-4);
 }
 
 .toolsSections .badges {
@@ -40,14 +44,14 @@
 
 .html5 {
   background-color: #e54c21;
-  animation: htmlAnimation 2s ease-out;
+  animation: htmlAnimation 2s ease-in-out;
   top: 0;
   left: 0;
 }
 
 .css3 {
   background-color: #2995ce;
-  animation: cssAnimation 2s ease-out;
+  animation: cssAnimation 2s ease-in-out;
   top: 0;
   left: 32%;
 }
@@ -55,28 +59,28 @@
 .javascript {
   background-color: #f7e018;
   color: black;
-  animation: javascriptAnimation 1.5s ease-out;
+  animation: javascriptAnimation 1.5s ease-in-out;
   top: 0;
   left: 59%;
 }
 
 .react {
   background-color: var(--color-palet-4);
-  animation: reactAnimation 1s ease-out;
+  animation: reactAnimation 1s ease-in-out;
   top: 35%;
   left: 5%;
 }
 
 .reactNative {
   background-color: var(--color-palet-4);
-  animation: reactNativeAnimation 2s ease-out;
+  animation: reactNativeAnimation 2s ease-in-out;
   top: 35%;
   left: 32%;
 }
 
 .vue {
   background-color: #79cda7;
-  animation: vueAnimation 2s ease-out;
+  animation: vueAnimation 2s ease-in-out;
   top: 35%;
   left: 80%;
 }
@@ -90,21 +94,21 @@
 
 .nodejs {
   background-color: #90c53f;
-  animation: nodejsAnimation 1.5s ease-out;
+  animation: nodejsAnimation 1.5s ease-in-out;
   top: 0;
   left: 29%;
 }
 
 .mysql {
   background-color: #f49823;
-  animation: mysqlAnimation 2s ease-out;
+  animation: mysqlAnimation 2s ease-in-out;
   top: 0%;
   left: 60%;
 }
 
 .mongodb {
   background-color: #4ca84a;
-  animation: mongodbAnimation 2s ease-out;
+  animation: mongodbAnimation 2s ease-in-out;
   top: 35%;
   left: 7%;
 }
@@ -112,7 +116,7 @@
 .api {
   background-color: #e6f3fe;
   color: black;
-  animation: apiAnimation 2s ease-out;
+  animation: apiAnimation 2s ease-in-out;
   top: 35%;
   left: 48%;
 }
@@ -129,8 +133,39 @@
 .react:hover,
 .php:hover,
 .mysql:hover,
-.api:hover {
+.api:hover,
+.vue:hover {
   transform: rotate(-10deg) translateY(-5px);
+}
+
+.works {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  gap: 8%;
+  padding-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.works img {
+  width: 9rem;
+  height: 9rem;
+  border-radius: 50%;
+  visibility: hidden;
+  transition: all 0.3s;
+}
+
+.works img:hover {
+  transform: scale(1.2);
+}
+
+.work .animate img {
+  animation: rollIn 2s ease-out;
+  visibility: visible;
+}
+
+.works img:hover {
+  cursor: pointer;
 }
 
 /* Animations */
@@ -282,14 +317,29 @@
   }
 }
 
+@keyframes rollIn {
+  from {
+    transform: translateX(-50rem) rotate(0deg);
+  }
+  to {
+    transform: translateX(0rem) rotate(360deg);
+  }
+}
+
 /* Mobile */
 @media (max-width: 650px) {
-  .toolsSections {
-    flex-direction: column;
+  .tools {
     overflow: hidden;
   }
+  .toolsSections {
+    flex-direction: column;
+  }
+  .toolsSections h2 {
+    font-size: 1.2rem;
+  }
 
-  .tools h3 {
-    font-size: unset;
+  .tools h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
   }
 }
