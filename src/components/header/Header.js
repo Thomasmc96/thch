@@ -9,13 +9,15 @@ const Header = (props) => {
 
   return (
     <header className="header">
-      {/* Header backgrounds by Ditte Lykke Hansen @devditte.dk */}
-      <div
-        className="headerBackground"
-      // style={{ backgroundImage: "url(" + props.background + ")" }}
-      >
-        <ProgressiveImg src={props.background} placeholderSrc={props.backgroundPlaceholder} alt="Header background" width="1920px" height="1080px" className="headerImg" />
-        {/* <img className="headerImg" src={props.background} /> */}
+      <div className="headerBackground">
+        <ProgressiveImg
+          src={props.background}
+          placeholderSrc={props.backgroundPlaceholder}
+          alt="Header background"
+          width="1920px"
+          height="1080px"
+          className="headerImg"
+        />
         <div className="headerTitle">
           {props.title}{" "}
           {props.icon && (

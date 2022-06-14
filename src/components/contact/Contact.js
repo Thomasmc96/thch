@@ -4,6 +4,8 @@ import "./Contact.css";
 import icon from "../../assets/img/icons/contact-white.svg";
 import backgroundPc from "../../assets/img/backgrounds/background_sunset_pc.jpg";
 import backgroundMobile from "../../assets/img/backgrounds/background_sunset_mobile.jpg";
+import backgroundPcPlaceholder from "../../assets/img/backgrounds/background_sunset_pc_placeholder.jpg";
+import backgroundMobilePlaceholder from "../../assets/img/backgrounds/background_sunset_mobile_placeholder.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
@@ -20,6 +22,8 @@ const Contact = () => {
 
   // Set header background
   const background = width > 1000 ? backgroundPc : backgroundMobile;
+  const backgroundPlaceholder =
+    width > 1000 ? backgroundPcPlaceholder : backgroundMobilePlaceholder;
 
   // useEffect hook that fires when component has mounted
   useEffect(() => {
@@ -31,7 +35,12 @@ const Contact = () => {
 
   return (
     <React.Fragment>
-      <Header title="Contact" icon={icon} background={background} />
+      <Header
+        title="Contact"
+        icon={icon}
+        background={background}
+        backgroundPlaceholder={backgroundPlaceholder}
+      />
       <div className="container contact">
         <h1>
           Let me hear from you<span onClick={handleEasterEgg}>!</span>{" "}

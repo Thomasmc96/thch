@@ -5,6 +5,8 @@ import icon from "../../assets/img/icons/experience-white.svg";
 import icon2 from "../../assets/img/icons/school-white.svg";
 import backgroundPc from "../../assets/img/backgrounds/background_day_pc.jpg";
 import backgroundMobile from "../../assets/img/backgrounds/background_day_mobile.jpg";
+import backgroundPcPlaceholder from "../../assets/img/backgrounds/background_day_pc_placeholder.jpg";
+import backgroundMobilePlaceholder from "../../assets/img/backgrounds/background_day_mobile_placeholder.jpg";
 import talesBrand from "../../assets/img/tales.jpg";
 import holder100Brand from "../../assets/img/holder100.jpg";
 import supeoBrand from "../../assets/img/supeo.jpg";
@@ -24,6 +26,8 @@ const Experience = () => {
 
   // Set header background
   const background = width > 1000 ? backgroundPc : backgroundMobile;
+  const backgroundPlaceholder =
+    width > 1000 ? backgroundPcPlaceholder : backgroundMobilePlaceholder;
 
   // useEffect hook that fires when component has mounted
   useEffect(() => {
@@ -32,7 +36,12 @@ const Experience = () => {
 
   return (
     <React.Fragment>
-      <Header title="Experience" icon={icon} background={background} />
+      <Header
+        title="Experience"
+        icon={icon}
+        background={background}
+        backgroundPlaceholder={backgroundPlaceholder}
+      />
       <div className="switchBox">
         <img src={icon} alt="Work Icon" className="icon workIcon" />
         <label className="switch" for="switch">

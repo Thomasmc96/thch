@@ -5,6 +5,8 @@ import "./Tools.css";
 import icon from "../../assets/img/icons/tools-white.svg";
 import backgroundPc from "../../assets/img/backgrounds/background_sunrise_pc.jpg";
 import backgroundMobile from "../../assets/img/backgrounds/background_sunrise_mobile.jpg";
+import backgroundPcPlaceholder from "../../assets/img/backgrounds/background_sunrise_pc_placeholder.jpg";
+import backgroundMobilePlaceholder from "../../assets/img/backgrounds/background_sunrise_mobile_placeholder.jpg";
 // import toucanThiefLogo from "../../assets/img/toucanThiefLogo.png";
 // import traekunstLogo from "../../assets/img/traekunstLogo.png";
 // import craftdLogo from "../../assets/img/craftdLogo.png";
@@ -23,6 +25,8 @@ const Tools = () => {
 
   // Set header background
   const background = width > 1000 ? backgroundPc : backgroundMobile;
+  const backgroundPlaceholder =
+    width > 1000 ? backgroundPcPlaceholder : backgroundMobilePlaceholder;
 
   // useEffect hook that fires when component has mounted
   useEffect(() => {
@@ -42,7 +46,12 @@ const Tools = () => {
 
   return (
     <React.Fragment>
-      <Header title="Tools" icon={icon} background={background} />
+      <Header
+        title="Tools"
+        icon={icon}
+        background={background}
+        backgroundPlaceholder={backgroundPlaceholder}
+      />
       <section className="container tools">
         <h1>These are my most used tools</h1>
         <div className="toolsSections">
