@@ -1,7 +1,9 @@
 import React, { useEffect } from "react";
 import Header from "../header/Header";
+import ProgressiveImg from "../utilities/ProgressiveImg";
 import "./Home.css";
 import me from "../../assets/img/me.jpg";
+import mePlaceholder from "../../assets/img/mePlaceholder.jpg";
 import icon from "../../assets/img/icons/home-white.svg";
 import backgroundPc from "../../assets/img/backgrounds/background_night_pc.jpg";
 import backgroundMobile from "../../assets/img/backgrounds/background_night_mobile.jpg";
@@ -52,14 +54,15 @@ const Home = () => {
           <div className="img">
             <picture>
               <source />
-              <img
+              {/* <img
                 srcSet={`${me} 125w, ${me} 250w, ${me} 500w, ${me} 512w`}
                 alt="Me"
                 className="me"
                 loading="lazy"
                 width="556px"
                 height="646px"
-              />
+              /> */}
+              <ProgressiveImg src={me} placeholderSrc={mePlaceholder} alt="Me" width="556px" height="646px" className="me" />
             </picture>
             <p>And here I am</p>
           </div>
