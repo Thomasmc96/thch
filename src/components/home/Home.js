@@ -7,6 +7,8 @@ import mePlaceholder from "../../assets/img/mePlaceholder.jpg";
 import icon from "../../assets/img/icons/home-white.svg";
 import backgroundPc from "../../assets/img/backgrounds/background_night_pc.jpg";
 import backgroundMobile from "../../assets/img/backgrounds/background_night_mobile.jpg";
+import backgroundPcPlaceholder from "../../assets/img/backgrounds/background_night_pc_placeholder.jpg";
+import backgroundMobilePlaceholder from "../../assets/img/backgrounds/background_night_mobile_placeholder.jpg";
 
 const Home = () => {
   const myBirthDate = new Date(1996, 5, 4); // Month needs to be -1
@@ -22,6 +24,7 @@ const Home = () => {
 
   // Set header background
   const background = width > 1000 ? backgroundPc : backgroundMobile;
+  const backgroundPlaceholder = width > 1000 ? backgroundPcPlaceholder : backgroundMobilePlaceholder;
 
   // useEffect hook that fires when component has mounted
   useEffect(() => {
@@ -30,7 +33,7 @@ const Home = () => {
 
   return (
     <React.Fragment>
-      <Header title="Home" icon={icon} background={background} />
+      <Header title="Home" icon={icon} background={background} backgroundPlaceholder={backgroundPlaceholder} />
       <div className="container home">
         <h1>Welcome to TechThomas</h1>
         <div className="info">
@@ -52,18 +55,7 @@ const Home = () => {
             </p>
           </div>
           <div className="img">
-            <picture>
-              <source />
-              {/* <img
-                srcSet={`${me} 125w, ${me} 250w, ${me} 500w, ${me} 512w`}
-                alt="Me"
-                className="me"
-                loading="lazy"
-                width="556px"
-                height="646px"
-              /> */}
-              <ProgressiveImg src={me} placeholderSrc={mePlaceholder} alt="Me" width="556px" height="646px" className="me" />
-            </picture>
+            <ProgressiveImg src={me} placeholderSrc={mePlaceholder} alt="Me" width="556px" height="646px" className="me" />
             <p>And here I am</p>
           </div>
         </div>

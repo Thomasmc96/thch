@@ -1,5 +1,6 @@
 import React from "react";
 import "./Header.css";
+import ProgressiveImg from "../utilities/ProgressiveImg";
 import { Link } from "react-router-dom";
 
 const Header = (props) => {
@@ -7,12 +8,14 @@ const Header = (props) => {
   const scrollToTop = () => window.scrollTo(0, 0);
 
   return (
-    <header>
+    <header className="header">
       {/* Header backgrounds by Ditte Lykke Hansen @devditte.dk */}
       <div
-        className="headerImg"
-        style={{ backgroundImage: "url(" + props.background + ")" }}
+        className="headerBackground"
+      // style={{ backgroundImage: "url(" + props.background + ")" }}
       >
+        <ProgressiveImg src={props.background} placeholderSrc={props.backgroundPlaceholder} alt="Header background" width="1920px" height="1080px" className="headerImg" />
+        {/* <img className="headerImg" src={props.background} /> */}
         <div className="headerTitle">
           {props.title}{" "}
           {props.icon && (
