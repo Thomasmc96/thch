@@ -44,7 +44,7 @@ const Experience = () => {
       />
       <div className="switchBox">
         <img src={icon} alt="Work Icon" className="icon workIcon" />
-        <label className="switch" for="switch">
+        <label className="switch">
           <input
             type="checkbox"
             name="switch"
