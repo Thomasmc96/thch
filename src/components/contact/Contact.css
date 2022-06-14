@@ -1,5 +1,7 @@
 .contact {
   padding-bottom: 5rem;
+  /* padding-bottom: 13vw; */
+  /* overflow: hidden; */
 }
 
 .contact .mail {
@@ -55,13 +57,15 @@
 
 @keyframes moveUp {
   from {
-    transform: translateY(20rem);
+    transform: translateY(15rem);
     visibility: hidden;
+    opacity: 0;
   }
 
   to {
     transform: translateY(0rem);
     visibility: visible;
+    opacity: 1;
   }
 }
 
@@ -69,6 +73,7 @@
 @media (max-width: 650px) {
   .contact {
     overflow: hidden;
+    padding-bottom: 10rem;
   }
   .icons {
     overflow: visible;
