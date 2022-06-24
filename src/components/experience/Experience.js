@@ -93,7 +93,7 @@ const Experience = () => {
                 </p>
                 <i>2020 november - 2021 june</i>
                 <p className="description">
-                  My time at Holder 100 happend at the end of my study as web
+                  My time at Holder 100 happened at the end of my study as web
                   developer. Here I've constructed websites for customers with
                   the use of WordPress, PHP and MySQL. For my bachelor project I
                   created a SPA with React, PHP and MySQL with the purpose of
