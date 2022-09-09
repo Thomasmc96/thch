@@ -7,6 +7,7 @@ import backgroundPc from "../../assets/img/backgrounds/background_day_pc.jpg";
 import backgroundMobile from "../../assets/img/backgrounds/background_day_mobile.jpg";
 import backgroundPcPlaceholder from "../../assets/img/backgrounds/background_day_pc_placeholder.jpg";
 import backgroundMobilePlaceholder from "../../assets/img/backgrounds/background_day_mobile_placeholder.jpg";
+import hiperBrand from "../../assets/img/hiper.png";
 import talesBrand from "../../assets/img/tales.jpg";
 import holder100Brand from "../../assets/img/holder100.jpg";
 import supeoBrand from "../../assets/img/supeo.jpg";
@@ -58,6 +59,21 @@ const Experience = () => {
       <div className="container experience">
         {!showSchool && (
           <React.Fragment>
+            <section className="hiper">
+              <img id="hiperBrand" src={hiperBrand} alt="Hiper brand" />
+              <div>
+                <h2>Software Developer</h2>
+                <p>
+                  <a href="https://hiper.dk" target="_blank" rel="noreferrer">
+                    @Hiper
+                  </a>
+                </p>
+                <i>2022 october - now</i>
+                <p className="description">
+                  Hiper..
+                </p>
+              </div>
+            </section>
             <section className="tales">
               <img src={talesBrand} alt="Tales brand" />
               <div>
@@ -67,7 +83,7 @@ const Experience = () => {
                     @Tales
                   </a>
                 </p>
-                <i>2021 september - now</i>
+                <i>2021 september - 2022 september</i>
                 <p className="description">
                   As a full-stack developer at Tales I've taken responsiblity of
                   creating API's, fetching data from 3rd party collaborators,

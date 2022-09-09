@@ -1,6 +1,7 @@
 .experience {
   margin-top: 0;
 }
+
 .experience section {
   display: flex;
   gap: 1rem;
@@ -30,26 +31,38 @@
 .experience section p {
   margin: 0;
 }
+
 .experience section a {
   color: var(--text-color);
   text-decoration: none;
 }
+
 .experience section i {
   margin-bottom: 0.5rem;
 }
 
-.tales {
+#hiperBrand {
+  background-color: #303A4B;
+
+}
+
+.hiper {
   animation: fadeIn 3s 0s forwards;
   opacity: 0;
 }
 
-.holder100 {
+.tales {
   animation: fadeIn 3s 0.5s forwards;
   opacity: 0;
 }
 
-.supeo {
+.holder100 {
   animation: fadeIn 3s 1s forwards;
+  opacity: 0;
+}
+
+.supeo {
+  animation: fadeIn 3s 1.5s forwards;
   opacity: 0;
 }
 
