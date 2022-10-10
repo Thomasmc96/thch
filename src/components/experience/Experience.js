@@ -65,12 +65,17 @@ const Experience = () => {
                 <h2>Software Developer</h2>
                 <p>
                   <a href="https://hiper.dk" target="_blank" rel="noreferrer">
-                    @Hiper
+                    @Hiper A/S
                   </a>
                 </p>
                 <i>2022 october - now</i>
                 <p className="description">
-                  Hiper..
+                  At Hiper I'm working as a part of an agile development team
+                  with eigth members. Here I'm mostly developing features to
+                  their CRM backend system but also their client UI. In our
+                  daily workflow we use a lot of artifacts and methods from
+                  Scrum, and as our programming tools we use PHP, Symfony, Sass,
+                  PostgreSQL, Docker and Ubuntu.
                 </p>
               </div>
             </section>
