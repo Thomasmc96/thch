@@ -28,14 +28,13 @@ const Home = () => {
 
   // useEffect hook that fires when component has mounted
   useEffect(() => {
-    document.title = "Home | TechThomas";
+    document.title = "Home | thch";
   });
 
   return (
     <React.Fragment>
       <Header title="Home" icon={icon} background={background} backgroundPlaceholder={backgroundPlaceholder} />
       <div className="container home">
-        <h1>Welcome to TechThomas</h1>
         <div className="info">
           <div className="text">
             <p>

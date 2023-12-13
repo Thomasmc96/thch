@@ -51,8 +51,8 @@ const Contact = () => {
           )}
         </h1>
         <h2>
-          <a href="mailto:tc@techthomas.dk" className="mail">
-            tc@techthomas.dk
+          <a href="mailto:mail@thch.dk" className="mail">
+            mail@thch.dk
           </a>
         </h2>
         <div className="icons">

@@ -1,5 +1,6 @@
 .home {
   animation: fadeInHome 0.5s;
+  margin-top: 3rem;
 }
 
 .me {
