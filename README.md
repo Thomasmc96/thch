@@ -1,3 +1,3 @@
-# Techthomas.dk
+# thch.dk
 
-Go check it out at [Techthomas.dk](https://techthomas.dk).
+Go check it out at [thch.dk](https://thch.dk).

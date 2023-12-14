@@ -5,7 +5,7 @@ import backgroundMobile from "../../../assets/img/backgrounds/background_sunrise
 
 const Craftd = () => {
   useEffect(() => {
-    document.title = "Craftd | TechThomas";
+    document.title = "Craftd | ";
   });
 
   // Get window width

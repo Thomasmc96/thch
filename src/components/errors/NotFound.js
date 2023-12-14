@@ -5,7 +5,7 @@ import toucan from "../../assets/img/toucanKingDead.png";
 
 const NotFound = () => {
   useEffect(() => {
-    document.title = "404 | TechThomas";
+    document.title = "404 | thch";
   });
 
   return (

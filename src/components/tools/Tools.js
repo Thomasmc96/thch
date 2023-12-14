@@ -30,7 +30,7 @@ const Tools = () => {
 
   // useEffect hook that fires when component has mounted
   useEffect(() => {
-    document.title = "Tools | TechThomas";
+    document.title = "Tools | thch";
 
     // // Set scrolled
     // const onScroll = () => {

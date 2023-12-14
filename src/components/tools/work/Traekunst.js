@@ -5,7 +5,7 @@ import backgroundMobile from "../../../assets/img/backgrounds/background_sunrise
 
 const Traekunst = () => {
   useEffect(() => {
-    document.title = "Traekunst | TechThomas";
+    document.title = "Traekunst | thch";
   });
 
   // Get window width

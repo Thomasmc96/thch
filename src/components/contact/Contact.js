@@ -12,6 +12,8 @@ import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const Contact = () => {
+  const mail = "mail@thch.dk";
+
   const [showEasterEgg, setShowEasterEgg] = useState(false);
 
   // Get window width
@@ -27,7 +29,7 @@ const Contact = () => {
 
   // useEffect hook that fires when component has mounted
   useEffect(() => {
-    document.title = "Contact | TechThomas";
+    document.title = "Contact | thch";
   });
 
   // Show easter egg function
@@ -51,8 +53,8 @@ const Contact = () => {
           )}
         </h1>
         <h2>
-          <a href="mailto:mail@thch.dk" className="mail">
-            mail@thch.dk
+          <a href={"mailto:" + mail} className="mail">
+            {mail}
           </a>
         </h2>
         <div className="icons">
@@ -72,7 +74,7 @@ const Contact = () => {
           >
             <FontAwesomeIcon icon={faLinkedin} className="icon linkedin" />
           </a>
-          <a href="mailto:tc@techthomas.dk" className="iconLink">
+          <a href={"mailto:" + mail} className="iconLink">
             <FontAwesomeIcon icon={faEnvelope} className="icon envelope" />
           </a>
         </div>

@@ -32,7 +32,7 @@ const Experience = () => {
 
   // useEffect hook that fires when component has mounted
   useEffect(() => {
-    document.title = "Experience | TechThomas";
+    document.title = "Experience | thch";
   });
 
   return (
@@ -71,7 +71,7 @@ const Experience = () => {
                 <i>2022 october - now</i>
                 <p className="description">
                   At Hiper I'm working as a part of an agile development team
-                  with eigth members. Here I'm mostly developing features to
+                  with currently 11 members. Here I'm mostly developing features to
                   their CRM backend system but also their client UI. In our
                   daily workflow we use a lot of artifacts and methods from
                   Scrum, and as our programming tools we use PHP, Symfony, Sass,

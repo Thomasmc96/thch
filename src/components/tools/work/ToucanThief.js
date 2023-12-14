@@ -5,7 +5,7 @@ import backgroundMobile from "../../../assets/img/backgrounds/background_sunrise
 
 const ToucanThief = () => {
   useEffect(() => {
-    document.title = "Toucan Thief | TechThomas";
+    document.title = "Toucan Thief | thch";
   });
 
   // Get window width
