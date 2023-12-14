@@ -59,7 +59,7 @@ const Contact = () => {
         </h2>
         <div className="icons">
           <a
-            href="https://github.com/thom9521"
+            href="https://github.com/Thomasmc96"
             target="_blank"
             rel="noreferrer"
             className="iconLink"
