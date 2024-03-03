@@ -12,7 +12,7 @@ import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const Contact = () => {
-  const mail = "mail@thch.dk";
+  const mail = "thomas@thch.dk";
 
   const [showEasterEgg, setShowEasterEgg] = useState(false);
 
