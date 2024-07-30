@@ -16,24 +16,27 @@ const Home = () => {
   const diffAsDate = new Date(diff);
   const myAge = Math.abs(diffAsDate.getUTCFullYear() - 1970);
 
-  // Get window width
   const width =
     window.innerWidth ||
     document.documentElement.clientWidth ||
     document.body.clientWidth;
 
-  // Set header background
   const background = width > 1000 ? backgroundPc : backgroundMobile;
-  const backgroundPlaceholder = width > 1000 ? backgroundPcPlaceholder : backgroundMobilePlaceholder;
+  const backgroundPlaceholder =
+    width > 1000 ? backgroundPcPlaceholder : backgroundMobilePlaceholder;
 
-  // useEffect hook that fires when component has mounted
   useEffect(() => {
     document.title = "Home | thch";
   });
 
   return (
     <React.Fragment>
-      <Header title="Home" icon={icon} background={background} backgroundPlaceholder={backgroundPlaceholder} />
+      <Header
+        title="Home"
+        icon={icon}
+        background={background}
+        backgroundPlaceholder={backgroundPlaceholder}
+      />
       <div className="container home">
         <div className="info">
           <div className="text">
@@ -45,8 +48,8 @@ const Home = () => {
             </p>
             <p>
               So who am I? I'm a {myAge} year old full-stack web developer who
-              lives in Næstved, Denmark. In my free time I love to be with
-              friends and family, walk my dogs, play video games and code.
+              lives in Køge, Denmark. In my free time I love to be with friends
+              and family, walk my dogs, play video games and code.
             </p>
             <p>
               As a person I'm a very calm and ambitious guy who always gives his
@@ -54,7 +57,14 @@ const Home = () => {
             </p>
           </div>
           <div className="img">
-            <ProgressiveImg src={me} placeholderSrc={mePlaceholder} alt="Me" width="556px" height="646px" className="me" />
+            <ProgressiveImg
+              src={me}
+              placeholderSrc={mePlaceholder}
+              alt="Me"
+              width="556px"
+              height="646px"
+              className="me"
+            />
             <p>And here I am</p>
           </div>
         </div>
