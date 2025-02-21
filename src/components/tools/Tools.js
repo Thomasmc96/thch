@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-// import { Link } from "react-router-dom";
 import Header from "../header/Header";
 import "./Tools.css";
 import icon from "../../assets/img/icons/tools-white.svg";
@@ -7,41 +6,19 @@ import backgroundPc from "../../assets/img/backgrounds/background_sunrise_pc.jpg
 import backgroundMobile from "../../assets/img/backgrounds/background_sunrise_mobile.jpg";
 import backgroundPcPlaceholder from "../../assets/img/backgrounds/background_sunrise_pc_placeholder.jpg";
 import backgroundMobilePlaceholder from "../../assets/img/backgrounds/background_sunrise_mobile_placeholder.jpg";
-// import toucanThiefLogo from "../../assets/img/toucanThiefLogo.png";
-// import traekunstLogo from "../../assets/img/traekunstLogo.png";
-// import craftdLogo from "../../assets/img/craftdLogo.png";
 
 const Tools = () => {
-  // const [scrolled, setScrolled] = useState(false);
-
-  // Scroll to top of page
-  // const scrollToTop = () => window.scrollTo(0, 0);
-
-  // Get window width
   const width =
     window.innerWidth ||
     document.documentElement.clientWidth ||
     document.body.clientWidth;
 
-  // Set header background
   const background = width > 1000 ? backgroundPc : backgroundMobile;
   const backgroundPlaceholder =
     width > 1000 ? backgroundPcPlaceholder : backgroundMobilePlaceholder;
 
-  // useEffect hook that fires when component has mounted
   useEffect(() => {
     document.title = "Tools | thch";
-
-    // // Set scrolled
-    // const onScroll = () => {
-    //   if (window.pageYOffset > 0) {
-    //     setScrolled(true);
-    //   }
-    // };
-    // // clean up code
-    // window.removeEventListener("scroll", onScroll);
-    // window.addEventListener("scroll", onScroll, { passive: true });
-    // return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
   return (
@@ -78,20 +55,6 @@ const Tools = () => {
           </section>
         </div>
       </section>
-      {/* <section className="container work">
-        <h1>Some work and projects I did</h1>
-        <div className={scrolled ? "works animate" : "works"}>
-          <Link to={"traekunst"} onClick={scrollToTop}>
-            <img src={traekunstLogo} alt="Traekunst Logo" />
-          </Link>
-          <Link to={"craftd"} onClick={scrollToTop}>
-            <img src={craftdLogo} alt="Craftd Logo" />
-          </Link>
-          <Link to={"toucan-thief"} onClick={scrollToTop}>
-            <img src={toucanThiefLogo} alt="Toucan Thief Logo" />
-          </Link>
-        </div>
-      </section> */}
     </React.Fragment>
   );
 };

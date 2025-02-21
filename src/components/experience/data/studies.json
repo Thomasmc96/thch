@@ -1,0 +1,22 @@
+[
+  {
+    "slug": "webDevelopment",
+    "image": "zealandBrand",
+    "title": "Prof. Bachelor in Web Development",
+    "href": "https://zealand.com",
+    "company": "Zealand - Academy of Technologies and Business",
+    "period": "2020 February - 2021 July",
+    "description": "",
+    "grade": "11.1"
+  },
+  {
+    "slug": "computerScience",
+    "image": "zealandBrand",
+    "title": "AP Degree in Computer Science",
+    "href": "https://zealand.com",
+    "company": "Zealand - Academy of Technologies and Business",
+    "period": "2017 September - 2020 January",
+    "description": "",
+    "grade": "11.7"
+  }
+]

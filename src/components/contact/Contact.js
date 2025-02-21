@@ -16,27 +16,23 @@ const Contact = () => {
 
   const [showEasterEgg, setShowEasterEgg] = useState(false);
 
-  // Get window width
   const width =
     window.innerWidth ||
     document.documentElement.clientWidth ||
     document.body.clientWidth;
 
-  // Set header background
   const background = width > 1000 ? backgroundPc : backgroundMobile;
   const backgroundPlaceholder =
     width > 1000 ? backgroundPcPlaceholder : backgroundMobilePlaceholder;
 
-  // useEffect hook that fires when component has mounted
   useEffect(() => {
     document.title = "Contact | thch";
   });
 
-  // Show easter egg function
   const handleEasterEgg = () => setShowEasterEgg(true);
 
   return (
-    <React.Fragment>
+    <>
       <Header
         title="Contact"
         icon={icon}
@@ -79,7 +75,7 @@ const Contact = () => {
           </a>
         </div>
       </div>
-    </React.Fragment>
+    </>
   );
 };
 

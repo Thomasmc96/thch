@@ -41,14 +41,13 @@
   margin-bottom: 0.5rem;
 }
 
-#hiperBrand {
-  background-color: #303A4B;
-
-}
-
 .hiper {
   animation: fadeIn 3s 0s forwards;
   opacity: 0;
+}
+
+.hiper img {
+  background-color: #303a4b;
 }
 
 .tales {
@@ -81,7 +80,8 @@
   height: 1.5rem !important;
 }
 
-.atZealand {
+.webDevelopment p,
+.computerScience p {
   text-align: left !important;
 }
 

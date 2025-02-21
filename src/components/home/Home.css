@@ -28,6 +28,10 @@
   text-align: center;
 }
 
+.aLink {
+  color: var(--text-color);
+}
+
 @keyframes fadeInHome {
   from {
     opacity: 0;
