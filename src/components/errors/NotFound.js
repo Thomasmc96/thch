@@ -9,7 +9,7 @@ const NotFound = () => {
   });
 
   return (
-    <React.Fragment>
+    <>
       <Header title="404" />
       <div className="container notFound">
         <section>
@@ -17,7 +17,7 @@ const NotFound = () => {
           <img src={toucan} alt="Toucan" />
         </section>
       </div>
-    </React.Fragment>
+    </>
   );
 };
 

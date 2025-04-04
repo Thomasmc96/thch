@@ -17,10 +17,10 @@ const ToucanThief = () => {
   // Set header background
   const background = width > 1000 ? backgroundPc : backgroundMobile;
   return (
-    <React.Fragment>
+    <>
       <Header title="Toucan Thief" background={background} />
       <div>ToucanThief</div>
-    </React.Fragment>
+    </>
   );
 };
 

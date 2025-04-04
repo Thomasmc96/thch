@@ -22,7 +22,7 @@ const Tools = () => {
   }, []);
 
   return (
-    <React.Fragment>
+    <>
       <Header
         title="Tools"
         icon={icon}
@@ -30,9 +30,38 @@ const Tools = () => {
         backgroundPlaceholder={backgroundPlaceholder}
       />
       <section className="container tools">
-        <h1>These are my most used tools</h1>
+        <h1>My Toolbox</h1>
         <div className="toolsSections">
           <section>
+            <h2>Core</h2>
+            <div className="badges">
+              <span className="badge php">PHP</span>
+              <span className="badge react">React</span>
+              <span className="badge mysql">SQL</span>
+              <span className="badge typescript">TypeScript</span>
+              <span className="badge symfony">Symfony</span>
+              <span className="badge docker">Docker</span>
+              <span className="badge git">Git</span>
+            </div>
+          </section>
+          <section>
+            <h2>Frequently Used</h2>
+            <div className="badges">
+              <span className="badge reactNative">React Native</span>
+              <span className="badge nodejs">Node</span>
+              <span className="badge godot">Godot</span>
+            </div>
+          </section>
+          <section>
+            <h2>Rarely Used</h2>
+            <div className="badges">
+              <span className="badge vue">Vue</span>
+              <span className="badge laravel">Laravel</span>
+              <span className="badge mongodb">NoSQL</span>
+            </div>
+          </section>
+
+          {/* <section>
             <h2>Frontend</h2>
             <div className="badges">
               <span className="badge html5">HTML5</span>
@@ -52,10 +81,10 @@ const Tools = () => {
               <span className="badge mongodb">MongoDB</span>
               <span className="badge api">RESTful API</span>
             </div>
-          </section>
+          </section> */}
         </div>
       </section>
-    </React.Fragment>
+    </>
   );
 };
 

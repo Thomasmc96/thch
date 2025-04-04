@@ -1,24 +1,26 @@
 .tools {
   padding-bottom: 5rem;
+  animation: fadeInTools 0.5s;
 }
 
 .tools h1 {
   margin-bottom: 0;
-  animation: toolsHeader 4s;
+  animation: toolsHeader 0s;
   /* font-size: 2rem; */
 }
 
 .toolsSections {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   max-width: 70rem;
   align-items: center;
   min-height: 20rem;
 }
 
 .toolsSections section {
-  width: 18rem;
-  margin: 0 auto;
+  width: 25rem;
+  /* margin: 0 auto; */
+  margin-bottom: 1rem;
 }
 
 .toolsSections h2 {
@@ -26,32 +28,35 @@
 }
 
 .toolsSections .badges {
-  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* position: relative; */
   width: 100%;
-  height: 8rem;
+  /* height: 8rem; */
   margin: 0 auto;
 }
 
 .badge {
-  width: fit-content;
+  /* width: fit-content; */
   padding: 0.2rem 0.6rem;
   border-radius: 16px;
   font-size: 1.2rem;
   margin: 0.5rem;
-  position: absolute;
+  /* position: absolute; */
   transition: all 0.3s;
 }
 
 .html5 {
   background-color: #e54c21;
-  animation: htmlAnimation 2s ease-in-out;
+  /* animation: htmlAnimation 2s ease-in-out; */
   top: 0;
   left: 0;
 }
 
 .css3 {
   background-color: #2995ce;
-  animation: cssAnimation 2s ease-in-out;
+  /* animation: cssAnimation 2s ease-in-out; */
   top: 0;
   left: 32%;
 }
@@ -59,56 +64,61 @@
 .javascript {
   background-color: #f7e018;
   color: black;
-  animation: javascriptAnimation 1.5s ease-in-out;
+  /* animation: javascriptAnimation 1.5s ease-in-out; */
   top: 0;
   left: 59%;
 }
 
+.typescript {
+  background-color: #2f74c0;
+  color: white;
+}
+
 .react {
   background-color: var(--color-palet-4);
-  animation: reactAnimation 1s ease-in-out;
+  /* animation: reactAnimation 1s ease-in-out; */
   top: 35%;
   left: 5%;
 }
 
 .reactNative {
   background-color: var(--color-palet-4);
-  animation: reactNativeAnimation 2s ease-in-out;
+  /* animation: reactNativeAnimation 2s ease-in-out; */
   top: 35%;
   left: 32%;
 }
 
 .vue {
   background-color: #79cda7;
-  animation: vueAnimation 2s ease-in-out;
+  /* animation: vueAnimation 2s ease-in-out; */
   top: 35%;
   left: 80%;
 }
 
 .php {
   background-color: #767bb3;
-  animation: phpAnimation 3s ease-in-out;
+  /* animation: phpAnimation 3s ease-in-out; */
   top: 0;
   left: 5%;
 }
 
 .nodejs {
   background-color: #90c53f;
-  animation: nodejsAnimation 1.5s ease-in-out;
+  /* animation: nodejsAnimation 1.5s ease-in-out; */
   top: 0;
   left: 29%;
 }
 
 .mysql {
   background-color: #f49823;
-  animation: mysqlAnimation 2s ease-in-out;
+  /* animation: mysqlAnimation 2s ease-in-out; */
   top: 0%;
   left: 60%;
 }
 
 .mongodb {
   background-color: #4ca84a;
-  animation: mongodbAnimation 2s ease-in-out;
+  /* animation: mongodbAnimation 2s ease-in-out; */
   top: 35%;
   left: 7%;
 }
@@ -116,15 +126,42 @@
 .api {
   background-color: #e6f3fe;
   color: black;
-  animation: apiAnimation 2s ease-in-out;
+  /* animation: apiAnimation 2s ease-in-out; */
   top: 35%;
   left: 48%;
+}
+
+.godot {
+  background-color: #468bbf;
+  color: white;
+}
+
+.symfony {
+  background-color: black;
+  color: white;
+}
+
+.laravel {
+  background-color: #f5360b;
+  color: white;
+}
+
+.docker {
+  background-color: #2b9aee;
+  color: white;
+}
+
+.git {
+  background-color: #f05539;
+  color: white;
 }
 
 .html5:hover,
 .javascript:hover,
 .reactNative:hover,
 .nodejs:hover,
+.godot:hover,
+.laravel:hover,
 .mongodb:hover {
   transform: rotate(10deg) translateX(5px);
 }
@@ -134,6 +171,10 @@
 .php:hover,
 .mysql:hover,
 .api:hover,
+.typescript:hover,
+.symfony:hover,
+.docker:hover,
+.git:hover,
 .vue:hover {
   transform: rotate(-10deg) translateY(-5px);
 }
@@ -323,6 +364,17 @@
   }
   to {
     transform: translateX(0rem) rotate(360deg);
+  }
+}
+
+@keyframes fadeInTools {
+  from {
+    opacity: 0;
+    transform: translateY(-1rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0rem);
   }
 }
 
