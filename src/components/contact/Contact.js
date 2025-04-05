@@ -10,11 +10,18 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faCcVisa } from "@fortawesome/free-brands-svg-icons";
 
 const Contact = () => {
-  const mail = "thomas@thch.dk";
-
   const [showEasterEgg, setShowEasterEgg] = useState(false);
+
+  useEffect(() => {
+    document.title = "Contact | thch";
+  });
+
+  const handleEasterEgg = () => setShowEasterEgg(true);
+
+  const mail = "thomas@thch.dk";
 
   const width =
     window.innerWidth ||
@@ -24,12 +31,6 @@ const Contact = () => {
   const background = width > 1000 ? backgroundPc : backgroundMobile;
   const backgroundPlaceholder =
     width > 1000 ? backgroundPcPlaceholder : backgroundMobilePlaceholder;
-
-  useEffect(() => {
-    document.title = "Contact | thch";
-  });
-
-  const handleEasterEgg = () => setShowEasterEgg(true);
 
   return (
     <>

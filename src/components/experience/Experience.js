@@ -18,6 +18,10 @@ import studies from "./data/studies.json";
 const Experience = () => {
   const [showSchool, setShowSchool] = useState(false);
 
+  useEffect(() => {
+    document.title = "Experience | thch";
+  });
+
   const handleShowSchool = () => setShowSchool(!showSchool);
 
   const width =
@@ -28,10 +32,6 @@ const Experience = () => {
   const background = width > 1000 ? backgroundPc : backgroundMobile;
   const backgroundPlaceholder =
     width > 1000 ? backgroundPcPlaceholder : backgroundMobilePlaceholder;
-
-  useEffect(() => {
-    document.title = "Experience | thch";
-  });
 
   return (
     <>

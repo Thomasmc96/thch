@@ -6,7 +6,7 @@
     "href": "https://hiper.dk",
     "company": "Hiper A/S",
     "period": "2022 October - Present",
-    "description": "At Hiper, I'm working as a part of an agile development team with 11 members. I primarily develop features for their CRM backend system but also contribute to the client UI. We follow Scrum methodologies and use tools like PHP, Symfony, Sass, PostgreSQL, Docker, and Ubuntu.",
+    "description": "At Hiper, I'm working in an agile development team with 11 members. I primarily develop features for our CRM backend system and the customer portal. We follow Scrum methodologies and use the following tools: PHP, Symfony, React, TypeScript, PostgreSQL and Docker.",
     "grade": ""
   },
   {
@@ -26,7 +26,7 @@
     "href": "https://holder100.dk",
     "company": "Holder 100 ApS",
     "period": "2020 November - 2021 June",
-    "description": "During my time at Holder 100, I built websites for clients using WordPress, PHP, and MySQL. For my bachelor project, I developed a SPA with React, PHP, and MySQL to facilitate file and task sharing between Holder 100 and its customers. The final project is live at mit.holder100.dk.",
+    "description": "During my time at Holder 100, I built websites for clients using WordPress, PHP, and MySQL. For my bachelor project, I developed a SPA with React, PHP, and MySQL to facilitate file and task sharing between Holder 100 and their customers.",
     "grade": ""
   },
   {

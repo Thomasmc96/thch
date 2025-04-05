@@ -8,6 +8,10 @@ import backgroundPcPlaceholder from "../../assets/img/backgrounds/background_sun
 import backgroundMobilePlaceholder from "../../assets/img/backgrounds/background_sunrise_mobile_placeholder.jpg";
 
 const Tools = () => {
+  useEffect(() => {
+    document.title = "Tools | thch";
+  }, []);
+
   const width =
     window.innerWidth ||
     document.documentElement.clientWidth ||
@@ -16,10 +20,6 @@ const Tools = () => {
   const background = width > 1000 ? backgroundPc : backgroundMobile;
   const backgroundPlaceholder =
     width > 1000 ? backgroundPcPlaceholder : backgroundMobilePlaceholder;
-
-  useEffect(() => {
-    document.title = "Tools | thch";
-  }, []);
 
   return (
     <>

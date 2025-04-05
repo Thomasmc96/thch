@@ -2,8 +2,8 @@ import React, { useEffect } from "react";
 import Header from "../header/Header";
 import ProgressiveImg from "../utilities/ProgressiveImg";
 import "./Home.css";
-import me from "../../assets/img/me.jpg";
-import mePlaceholder from "../../assets/img/mePlaceholder.jpg";
+import me2 from "../../assets/img/me2.jpeg";
+import me2Placeholder from "../../assets/img/me2Placeholder.jpg";
 import icon from "../../assets/img/icons/home-white.svg";
 import backgroundPc from "../../assets/img/backgrounds/background_night_pc.jpg";
 import backgroundMobile from "../../assets/img/backgrounds/background_night_mobile.jpg";
@@ -11,6 +11,10 @@ import backgroundPcPlaceholder from "../../assets/img/backgrounds/background_nig
 import backgroundMobilePlaceholder from "../../assets/img/backgrounds/background_night_mobile_placeholder.jpg";
 
 const Home = () => {
+  useEffect(() => {
+    document.title = "Home | thch";
+  });
+
   const myBirthDate = new Date(1996, 5, 4); // Month needs to be -1
   const diff = Date.now() - myBirthDate.getTime();
   const diffAsDate = new Date(diff);
@@ -24,10 +28,6 @@ const Home = () => {
   const background = width > 1000 ? backgroundPc : backgroundMobile;
   const backgroundPlaceholder =
     width > 1000 ? backgroundPcPlaceholder : backgroundMobilePlaceholder;
-
-  useEffect(() => {
-    document.title = "Home | thch";
-  });
 
   return (
     <>
@@ -59,8 +59,8 @@ const Home = () => {
           </div>
           <div className="img">
             <ProgressiveImg
-              src={me}
-              placeholderSrc={mePlaceholder}
+              src={me2}
+              placeholderSrc={me2Placeholder}
               alt="Me"
               width="556px"
               height="646px"
