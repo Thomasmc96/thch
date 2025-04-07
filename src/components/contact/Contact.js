@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Header from "../header/Header";
 import "./Contact.css";
 import icon from "../../assets/img/icons/contact-white.svg";
+import resumeIcon from "../../assets/img/icons/CV.svg";
 import backgroundPc from "../../assets/img/backgrounds/background_sunset_pc.jpg";
 import backgroundMobile from "../../assets/img/backgrounds/background_sunset_mobile.jpg";
 import backgroundPcPlaceholder from "../../assets/img/backgrounds/background_sunset_pc_placeholder.jpg";
@@ -22,6 +23,8 @@ const Contact = () => {
   const handleEasterEgg = () => setShowEasterEgg(true);
 
   const mail = "thomas@thch.dk";
+  const resume =
+    "https://thch.dk/ThomasMarcusChristensen_CV_SoftwareDeveloper.pdf";
 
   const width =
     window.innerWidth ||
@@ -71,8 +74,8 @@ const Contact = () => {
           >
             <FontAwesomeIcon icon={faLinkedin} className="icon linkedin" />
           </a>
-          <a href={"mailto:" + mail} className="iconLink">
-            <FontAwesomeIcon icon={faEnvelope} className="icon envelope" />
+          <a href={resume} className="iconLink" target="_blank">
+            <img src={resumeIcon} href={resume} className="icon resume" />
           </a>
         </div>
       </div>

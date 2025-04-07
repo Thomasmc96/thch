@@ -26,6 +26,8 @@
 
 .contact .icons .iconLink {
   transition: all 0.2s;
+  width: 6rem;
+  text-align: center;
 }
 
 .contact .icons a {
@@ -45,8 +47,11 @@
   animation: moveUp 1s forwards 0.5s;
 }
 
-.contact .icons .envelope {
+.contact .icons .resume {
   animation: moveUp 1s forwards 1s;
+  width: 6rem;
+  color: white;
+  filter: brightness(0) invert(1);
 }
 
 .contact h1 span:first-child:hover {
