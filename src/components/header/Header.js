@@ -1,4 +1,3 @@
-import React from "react";
 import "./Header.css";
 import ProgressiveImg from "../utilities/ProgressiveImg";
 import { Link } from "react-router-dom";
