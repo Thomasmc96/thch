@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import Header from "../header/Header";
 import "./NotFound.css";
 import toucan from "../../assets/img/toucanKingDead.png";
